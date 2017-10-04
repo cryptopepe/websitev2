@@ -21,6 +21,8 @@ const themes = new Themes()
 
 const strings = new LocalizedStrings(require('../Strings/home').strings)
 
+let wow
+
 class Home extends Component {
 
     constructor(props) {
@@ -49,7 +51,8 @@ class Home extends Component {
     }
 
     componentDidMount = () => {
-        new WOW().init()
+        wow = new WOW()
+        wow.init()
     }
 
     apiGetters = () => {
@@ -140,9 +143,9 @@ class Home extends Component {
                             </div>
                         }
                         iconElementRight={
-                            <div className="row mt-2">
-                                {   constants.LANGUAGES_AVAILABLE.map((language) =>
-                                    <div className="col-2">
+                            <div className="row mt-2 mr-md-1">
+                                {   constants.LANGUAGES_AVAILABLE.map((language, index) =>
+                                    <div className={(index == 0 ? "offset-4 offset-md-0 " : "") + "col-1 col-md-2"}>
                                         <span className={"flag-icon flag-icon-" + language + " clickable"}
                                               onClick={() => {
                                                   self.helpers().selectLanguage(language)

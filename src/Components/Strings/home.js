@@ -101,7 +101,7 @@ export const strings = {
             dailyChange: '24h change',
         },
         roi: {
-            header: 'ROI',
+            header: 'Price Stats',
             since: 'Since January 2017',
             perMonth: 'Per month/Mastertoad',
             calculator: 'MasterToad Calculator',
@@ -110,7 +110,7 @@ export const strings = {
             month: 'month'
         },
         footer: {
-            memeticFoundation: 'Memetic Platform',
+            memeticFoundation: 'Memetic Foundation',
             links: {
                 home: 'Home',
                 kekdaq: 'Kekdaq',
@@ -216,7 +216,7 @@ export const strings = {
             dailyChange: '24시간 변경',
         },
         roi: {
-            header: 'ROI, return on investment(투자 수익률)',
+            header: 'Price Stats',
             since: ' 2017년 1월 이후부터',
             perMonth: '매월/Mastertoad',
             calculator: 'MasterToad Calculator',
@@ -332,7 +332,7 @@ export const strings = {
             dailyChange: '24小时改变',
         },
         roi: {
-            header: 'ROI',
+            header: 'Price Stats',
             since: '自从2017年1月',
             perMonth: '每月/Mastertoad',
             calculator: 'MasterToad 计算器',
@@ -441,7 +441,7 @@ export const strings = {
             dailyChange: '24時間当たりの変動率',
         },
         roi: {
-            header: '投資利益率',
+            header: 'Price Stats',
             since: '2017年1月〜',
             perMonth: '月々 / マスターノード(MasterToad)',
             enterNumberOfToads: 'マスターノード(MasterToad) の数を入力',
@@ -554,7 +554,7 @@ export const strings = {
             dailyChange: '24h Veränderung',
         },
         roi: {
-            header: 'ROI',
+            header: 'Price Stats',
             since: 'Seit Januar 2017',
             perMonth: 'Pro Monat/Mastertoad',
             enterNumberOfToads: 'Anzahl der MasterToads',
@@ -571,5 +571,115 @@ export const strings = {
             }
         }
     },
-    ru: {}
+    ru: {
+        cover: {
+            header: '  Меметрический',
+            subHeader: 'Гибридная криптовалюта PoS/PoW с Master Nodes и  зашифрованное децентрализованное хранение изображения с использование IPFS',
+            learnMore: 'Подробнее',
+            tryNow: 'Попробовать'
+        },
+        kekdaq: {
+            header: 'Kekdaq - Децентрализованный Обмен Активами',
+            info: 'Децентрализованный обмен активами / Обменный протокол. Kekdaq это первый реальный протокол партнера живущего в блоковой цепочке Pepecoin (Pepecoin ANN) и предназначен как место для сохранения memes которое необходимо для сохранения редкости упомянутых memes. Kekdaq  позволяет создание любое желаемое количество активов, обменивать или торговать с другими meme  знатоками  и использоваться для любых других  меметических свойств которые только можно представить.'
+        },
+        features: {
+            secure: {
+                title: 'Безопасно',
+                message: 'Все ключевые фазы кошелька Kekdaq Wallet высоко безопасны ' +
+                'Шифрование обрабатывается на стороне клиента. Ни ваш пароль не личная информация  никогда не выходят за пределы вашего браузера.'
+            },
+            simple: {
+                title: 'Прост в использовании',
+                message: 'С Kekdaq ваш пароль это ваш кошелек, и все ' +
+                ' ваши адреса и ключи образуются на лету когда вы авторизуетесь.  Нет бумажных файлов для резервного копирования и легкодоступно с любого браузера.'
+            },
+            openSource: {
+                title: 'Открыте источники',
+                message: 'Kekdaq  и бумажник являются  открытым источником, ' +
+                'И следовательно вы точно  знаете что они работают соответственно тому как должны. Если вы предпочитаете, ' +
+                ' вы даже можете везти свойKekdaq Wallet сервер.'
+            }
+        },
+        whatis: {
+            whatIsMemetic: {
+                header: 'Что такое Меметрик?',
+                info1: 'Меметрик это открытая пиринговая криптовалюта которая переводит жанр мемемонт на следующий уровень с инновационными функциями и реальных условий работы направленных на энергичное сообщество которое уже поддерживает Меметик (Memetic) .',
+                info2: 'Memetic это цифровая децентрализованная криптовалюта, гибрид и смесь нескольких других проектов криптовалют, и плюс много специальных кодов и и целей. Memetic предусматривает технологии  blockchain 2.0 and blockchain 3.0 и находится в постоянной разработке.'
+            },
+            useCases: {
+                header: 'Использование',
+                info1: 'Memetic это  Proof of Work (POW) / Proof of Stake (POS) криптовалютная вилка для 6 разных криптовалют со многими дополнительными слоями безопасности. Memetic децентрализованный, зашифрованный для хранения изображения  в IPFS, и подписан криптографическим способом в  блок-цепочке Memetic blockchain.',
+                info2: 'Далее сеть Memetic защищен дополнительно с MasterToads, эти узлы также предусматривает стимулирующие меры  для долгосрочного использования  инвесторами Memetic .',
+                info3: 'Защита вашим memes и цензурная политическая информация. Memetic будет обладать блок-цепь обеспечение безопасного хранения изображений и файлов с децентрализованными и умеренными способностями.'
+            },
+        },
+        coinInfo: {
+            specs: {
+                header: 'Спецификация Блок-цепи',
+                list: [
+                    'Порт по умолчанию 29377',
+                    'RPC порт 29376',
+                    ' время блокирования 60 секунд',
+                    'X11 алгоритм',
+                    'Свидетельство Доли – POS – 7% в блоке 600,000, падает на  2% годовых и сохраняет 3%',
+                    'Свидетельство Доли – POW – Перезагружается на блоке 600,000',
+                    '40 подтверждение для  новых Засвидетельствованный  Доль отчеканенных блоков ',
+                    '100 подтверждений для новых Засвидетельствованный  Доль отчеканенных блоков ',
+                    '60 секунд расчет на Свидетельство Доли  на один блок ',
+                    '6 часов минимум на  временную долю (12 часов в среднем)'
+                ]
+            },
+            features: {
+                header: 'Особенности',
+                list: ['Децентрализованная зашифрованная переписка',
+                    'Захированный Адреса',
+                    'Интегрированный обменный функции API Bittrex trading functions',
+                    'Интегрированный блок проводник ',
+                    'Отметка времени в изображении в блок-цепи для доказательства правообладания',
+                    'Внутренние Функции проверки  подтверждения изображения ',
+                    'JSON-RPC функции для внешнего запроса  перемешанных  соединительных блок-цепь дотирования изображений',
+                    'JSON-RPC функции для внешнего запроса всех настенных сообщений',
+                    'Базированное на PFS- смешанное находится в стадии разработки хранение',
+                ]
+            }
+        },
+        stats: {
+            telegram: 'Telegram',
+            twitter: 'Twitter',
+            assets: 'Assets',
+            mastertoads: 'Mastertoads',
+        },
+        resources: {
+            windowsWallet: 'Windows Wallet',
+            macWallet: 'Mac OS X Wallet (Coming soon)',
+            bittrex: 'Trade on Bittrex',
+            cryptopia: 'Trade on Cryptopia',
+            telegram: 'Reach out on Telegram',
+            bitcointalk: 'Bitcointalk Thread',
+        },
+        marketCap: {
+            header: 'Market Stats',
+            memePrice: 'Meme Price (USD)',
+            marketCap: 'Market Cap',
+            dailyChange: '24h change',
+        },
+        roi: {
+            header: 'Price Stats',
+            since: 'Since January 2017',
+            perMonth: 'Per month/Mastertoad',
+            enterNumberOfToads: 'Enter number of MasterToads',
+            day: 'day',
+            month: 'month'
+        },
+        footer: {
+            memeticFoundation: 'Memetic Foundation',
+            links: {
+                home: 'Home',
+                kekdaq: 'Kekdaq',
+                bitcointalk: 'BitcoinTalk',
+                telegram: 'Telegram'
+            }
+        }
+    }
+
 }
