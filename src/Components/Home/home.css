@@ -1,0 +1,668 @@
+/** GENERAL */
+
+.wow {
+    visibility: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.home .appbar-title .logo {
+    height: 40px;
+    width: 40px;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.home .header-block {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.home .header-icon {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.home .header-text {
+    margin-left: 20px;
+    display: inline;
+}
+
+/** COVER */
+.home .cover {
+    height: 50vh;
+    padding-top: 20vh;
+    background: #56ab2f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #a8e063, #72DE92); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(150deg, #56ab2f 15%, #72DE92 70%, #a8e063 94%);
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.home .cover:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-9deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+.home .cover .stripes {
+    background: linear-gradient(150deg, #56ab2f 15%, #72DE92 70%, #a8e063 94%);
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    transform: skewY(-9deg);
+    transform-origin: 0;
+    position: absolute;
+}
+
+.home .cover .stripes span {
+    height: 175px;
+    width: 33.33333%;
+}
+
+.home .cover .stripes span:nth-child(1) {
+    background: #56ab2f;
+    left: -16%;
+    top: 50px;
+    position: relative;
+}
+
+.home .cover .stripes span:nth-child(2) {
+    background: #5cb645;
+    left: -16%;
+    top: 50px;
+    position: relative;
+}
+
+.home .cover .stripes span:nth-child(3) {
+    background: #5cb645;
+    left: -16%;
+    top: 50px;
+    position: relative;
+}
+
+.home .cover .stripes span:nth-child(4) {
+    background: #8cdf7c;
+    position: absolute;
+    bottom: 150px;
+    right: 0;
+}
+
+.home .cover .stripes span:nth-child(5) {
+    background: #5cb746;
+    position: absolute;
+    bottom: 0;
+}
+
+.home .cover img {
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    display: block;
+    animation: float 6s ease-in-out infinite;
+}
+
+.home .cover .info {
+    padding-top: 6vh;
+}
+
+.home .cover h1,
+.home .cover h5 {
+    font-family: "Lato";
+}
+
+.home .cover h1 {
+    font-size: 4rem;
+}
+
+.home .cover h5 {
+    margin-top: 10px;
+    line-height: 32px;
+}
+
+@media (max-width: 768px) {
+    .home .cover .info {
+        padding-top: 0;
+    }
+}
+
+/** KEKDAQ */
+
+.home .kekdaq {
+    margin-top: 50vh;
+    height: 75vh;
+    z-index: 1;
+}
+
+.home .kekdaq .mockup {
+    position: absolute;
+    left: -3%;
+    top: 85%;
+    height: 650px;
+    object-fit: contain;
+}
+
+.home .kekdaq .logo {
+    height: 225px;
+    width: 225px;
+    display: block;
+}
+
+.home .kekdaq h1 {
+    color: #386f1f;
+    font-family: "Lato";
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 32px;
+}
+
+.home .kekdaq h5 {
+    color: #6b7c93;
+    font-family: "Lato";
+    font-size: 18px;
+    text-align: justify;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+.home .kekdaq a {
+    color: #386f1f;
+    font-family: "Lato";
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .home .kekdaq {
+        height: 100%;
+        padding-bottom: 20vh;
+        padding-top: 5vh;
+    }
+
+    .home .kekdaq h1 {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+/** FEATURES */
+
+.home .features {
+    background: #f6f9fc;
+    padding: 10vh 0 15vh 0;
+    position: relative;
+}
+
+.home .features:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -128px;
+    width: 100%;
+    height: 275px;
+    background: #f6f9fc;
+    -webkit-transform: skewY(-9deg);
+    -moz-transform: skewY(-9deg);
+    -ms-transform: skewY(-9deg);
+    -o-transform: skewY(-9deg);
+    transform: skewY(-9deg);
+    -webkit-backface-visibility: hidden;
+}
+
+.home .features .feature-card {
+    cursor: pointer;
+}
+
+.home .features .feature-card h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Lato';
+    color: #ffffff !important;
+}
+
+.home .features .feature-card p {
+    color: #ffffff !important;
+    font-size: 1.15rem;
+    text-align: justify;
+    margin-top: 20px;
+    font-family: 'Lato';
+}
+
+.home .features .feature-card img {
+    height: 64px;
+    width: 64px;
+    display: block;
+    object-fit: contain;
+    margin: 40px auto 40px auto;
+}
+
+@media (max-width: 768px) {
+    .home .features {
+        background: #f6f9fc;
+        padding: 5vh 2vw 10vh 2vw;
+        position: relative;
+    }
+
+    .home .features:before {
+        top: -96px;
+    }
+
+    .home .features .feature-card-div {
+        margin-top: 30px;
+    }
+
+    .home .features .feature-card p {
+        text-align: left;
+    }
+}
+
+/** WHAT IS */
+
+.home .whatis {
+    padding: 15vh 0 40vh 0;
+}
+
+.home .whatis h3 {
+    color: #386f1f;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+
+.home .whatis p {
+    color: #6b7c93;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .home .whatis {
+        padding: 5vh 2vw 25vh 2vw;
+    }
+
+    .home .whatis p {
+        text-align: left;
+    }
+
+    .home .whatis .card-div {
+        margin-top: 30px;
+    }
+}
+
+/** INFO */
+
+.home .coin-info {
+    background: #f6f9fc;
+    padding-bottom: 20vh;
+    position: relative;
+}
+
+.home .coin-info:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -128px;
+    width: 100%;
+    height: 275px;
+    background: #f6f9fc;
+    -webkit-transform: skewY(4.5deg);
+    -moz-transform: skewY(4.5deg);
+    -ms-transform: skewY(4.5deg);
+    -o-transform: skewY(4.5deg);
+    transform: skewY(4.5deg);
+    -webkit-backface-visibility: hidden;
+}
+
+.home .coin-info .specs {
+    border-right: 1px solid rgba(0, 0, 0, .1)
+}
+
+.home .coin-info h3,
+.home .coin-info h2 {
+    font-size: 1.5rem;
+    color: #386f1f;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home .coin-info img {
+    height: 48px;
+    width: 48px;
+    object-fit: contain;
+}
+
+.home .coin-info ul {
+    margin-top: 5vh;
+}
+
+.home .coin-info li {
+    color: #6b7c93;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.home .coin-info .specs {
+    padding-right: 5vw;
+}
+
+.home .coin-info .coin-features {
+    padding-left: 3vw;
+}
+
+@media (max-width: 768px) {
+    .home .coin-info:before {
+        top: -64px;
+    }
+
+    .home .coin-info .coin-features {
+        margin-top: 40px;
+    }
+}
+
+/** INFO */
+
+.home .stats {
+    height: 60vh;
+    padding-top: 15vh;
+    position: relative;
+}
+
+.home .stats:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -64px;
+    width: 100%;
+    height: 175px;
+    background: #ffffff;
+    -webkit-transform: skewY(4.5deg);
+    -moz-transform: skewY(4.5deg);
+    -ms-transform: skewY(4.5deg);
+    -o-transform: skewY(4.5deg);
+    transform: skewY(4.5deg);
+    -webkit-backface-visibility: hidden;
+}
+
+.home .stats h1 {
+    text-align: center;
+    color: #6b7c93;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.home .stats h3 {
+    text-align: center;
+    color: #6b7c93;
+    margin-top: 24px;
+    font-size: 1.5rem;
+}
+
+.home .stats .icon {
+    margin-top: 24px;
+    color: #56ab2f;
+    font-size: 2rem;
+}
+
+.home .stats img {
+    margin: 15px auto 0 auto;
+    height: 48px;
+    width: 48px;
+}
+
+@media (max-width: 768px) {
+    .home .stats {
+        height: 100%;
+        padding-bottom: 10vh;
+    }
+
+    .home .stats .stats-card {
+        margin-top: 40px;
+    }
+}
+
+/** RESOURCES */
+
+.home .resources {
+    margin-top: 20vh;
+    padding: 0 0 12vh 0;
+    position: relative;
+    background: #f6f9fc;
+}
+
+.home .resources:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -128px;
+    width: 100%;
+    height: 60vh;
+    background: #f6f9fc;
+    -webkit-transform: skewY(4.5deg);
+    -moz-transform: skewY(4.5deg);
+    -ms-transform: skewY(4.5deg);
+    -o-transform: skewY(4.5deg);
+    transform: skewY(4.5deg);
+    -webkit-backface-visibility: hidden;
+}
+
+.home .resources h1 {
+    color: #3d792f;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.home .resources .resource-card {
+    margin-top: 40px;
+}
+
+.home .resources p {
+    color: #6b7c93;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home .resources .icon {
+    margin: 15px auto 0 auto;
+    height: 48px;
+    width: 48px;
+}
+
+/** MARKET CAP */
+
+.home .market-cap {
+    height: 70vh;
+    background: #f6f9fc;
+}
+
+.home .market-cap hr {
+    margin: 0 0 10vh 0;
+}
+
+.home .market-cap h1 {
+    color: #3d792f;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.home .market-cap .market-stats {
+    margin-top: 7vh;
+}
+
+.home .market-cap h3 {
+    text-align: center;
+    color: #5cb645;
+    font-size: 2rem;
+}
+
+.home .market-cap h4 {
+    text-align: center;
+    color: #1d222c;
+    font-size: 1.25rem;
+    margin-top: 2vh;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .home .market-cap {
+        height: 100%;
+        padding-bottom: 25vh;
+    }
+
+    .home .market-cap .stats-card {
+        margin-top: 40px;
+    }
+}
+
+/** ROI */
+
+.home .roi {
+    padding: 0 0 20vh 0;
+    position: relative;
+    background: #7be668;
+}
+
+.home .roi:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -80px;
+    width: 100%;
+    height: 35vh;
+    background: #7be668;
+    -webkit-transform: skewY(-4.5deg);
+    -moz-transform: skewY(-4.5deg);
+    -ms-transform: skewY(-4.5deg);
+    -o-transform: skewY(-4.5deg);
+    transform: skewY(-4.5deg);
+    -webkit-backface-visibility: hidden;
+}
+
+.home .roi .header-icon {
+    object-fit: contain;
+}
+
+.home .roi h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.home .roi h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 10vh;
+}
+
+.home .roi h3 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+}
+
+.home .roi h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.home .roi .text-field {
+    display: block !important;
+    margin: 45px auto 0 auto;
+}
+
+.home .roi p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+    .home .roi h3 {
+        font-size: 2rem;
+    }
+}
+
+/** FOOTER */
+
+.home footer {
+    padding: 8vh 0 15vh 0;
+    position: relative;
+    background: #6cc95a;
+}
+
+.home footer:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -80px;
+    width: 100%;
+    height: 30vh;
+    background: #6cc95a;
+    -webkit-transform: skewY(-4.5deg);
+    -moz-transform: skewY(-4.5deg);
+    -ms-transform: skewY(-4.5deg);
+    -o-transform: skewY(-4.5deg);
+    transform: skewY(-4.5deg);
+    -webkit-backface-visibility: hidden;
+}
+
+.home footer img {
+    height: 36px;
+    width: 36px;
+    display: block;
+    margin: 0 auto;
+}
+
+.home footer p {
+    padding-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
