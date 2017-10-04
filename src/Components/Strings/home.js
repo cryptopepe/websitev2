@@ -110,7 +110,7 @@ export const strings = {
             month: 'month'
         },
         footer: {
-            memeticFoundation: 'Memetic Foundation',
+            memeticFoundation: 'Memetic Platform',
             links: {
                 home: 'Home',
                 kekdaq: 'Kekdaq',
