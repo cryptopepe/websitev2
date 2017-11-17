@@ -37,9 +37,9 @@ export const strings = {
         },
         whatis: {
             whatIsMemetic: {
-                header: 'What is Memetic?',
-                info1: 'Memetic is an open source peer to peer cryptocurrency that carries the memecoin genre to the next level with innovative features and real world application aimed at the robust community that already supports Memetic.',
-                info2: 'Memetic is digital decentralized crypto-currency, a hybrid mix of several other cryptocurrency projects, plus a lot of custom code and goals. Memetic incorporates both blockchain 2.0 and blockchain 3.0 technologies and is under continued development.'
+                header: 'What is Memetic / PepeCoin?',
+                info1: 'Memetic is an open source peer to peer cryptocurrency also known as PepeCoin, launched in March 2016 and under continued development. PepeCoin was renamed to Memetic due to pressure from the ADL and "politically correct" exchanges, was renamed back to PepeCoin in March 2017 and now uses both names.',
+                info2: 'Memetic / PepeCoin is digital decentralized crypto-currency, a hybrid mix of several other cryptocurrency projects, plus a lot of custom code and goals. Memetic incorporates both blockchain 2.0 and blockchain 3.0 technologies and is under continued development.'
             },
             useCases: {
                 header: 'Use cases',
