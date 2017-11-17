@@ -196,7 +196,7 @@ class Home extends Component {
                                                 <div className="col-8 col-md-8 col-xl-5 wow fadeIn">
                                                     <RaisedButton
                                                         label={strings.cover.tryNow}
-                                                        href="https://github.com/pepeteam/pepecoin/releases/tag/2.5.2.0"
+                                                        href="https://github.com/pepeteam/pepecoin/releases/"
                                                         className="mt-4 hvr-float btn-block"
                                                         style={styles.button.white.button}
                                                         buttonStyle={styles.button.white.button}
