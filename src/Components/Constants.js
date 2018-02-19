@@ -10,7 +10,7 @@ export const
     COLOR_WHITE_LIGHT = 'rgba(255, 255, 255, 0.6)',
     COLOR_BLACK = '#000000',
 
-    COINMARKETCAP_TICKER_URL = 'https://api.coinmarketcap.com/v1/ticker/',
+    COINMARKETCAP_TICKER_URL = 'https://api.coinmarketcap.com/v1/ticker/memetic/',
     TWITTER_INFO_URL = 'https://cors-anywhere.herokuapp.com/https://cdn.syndication.twimg.com/widgets/followbutton/info.json?screen_names=pepecoins',
 
     LANGUAGE_US = 'us',
