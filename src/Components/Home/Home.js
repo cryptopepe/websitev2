@@ -397,7 +397,7 @@ class Home extends Component {
                             {self.views().resourceCard(
                                 strings.resources.windowsWallet,
                                 'windows.png',
-                                'https://github.com/pepeteam/pepecoin/releases/tag/2.5.2.0')}
+                                'https://github.com/pepeteam/pepecoin/releases/')}
                             {self.views().resourceCard(
                                 strings.resources.macWallet,
                                 'mac.png',
