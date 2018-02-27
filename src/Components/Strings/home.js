@@ -6,13 +6,13 @@ export const strings = {
     us: {
         cover: {
             header: 'Memetic / PepeCoin',
-            subHeader: 'A Proof of Stake and Proof of Work hybrid cryptocurrency platform for the Kekdaq decentralized asset exchange and IPFS meme storage platform. Named PEPE first, now also named MEME for PC-friendly exchanges.',
+            subHeader: 'A Proof of Stake and Proof of Work hybrid cryptocurrency platform for the Kekdaq decentralized Meme hashing exchange and IPFS meme storage platform. Named PEPE first, now also named MEME.
             learnMore: 'Learn more',
             tryNow: 'Try now'
         },
         kekdaq: {
-            header: 'Kekdaq - Decentralized Asset Exchange',
-            info: 'A Decentralized Meme Asset/Exchange Protocol. Kekdaq is the first true protocol fork of Counterparty that lives on the Pepecoin blockchain (Pepecoin ANN) and aims to serve a much needed place to preserve memes and the rarity of said memes. Kekdaq allows you to create as many assets as you wish, trade them with other meme connoisseurs and to serve whatever memetic properties you can dream of.',
+            header: 'Kekdaq - Decentralized Meme Exchange Platform',
+            info: 'A Decentralized Meme Exchange Protocol. Kekdaq is the first true protocol fork of Counterparty that lives on the Pepecoin blockchain (Pepecoin ANN) and aims to serve a much needed place to preserve memes and the rarity of said memes. Kekdaq allows you to create, trade them with other meme connoisseurs and to serve whatever memetic properties you can dream of.',
             discover: 'Discover Kekdaq'
         },
         features: {
