@@ -6,7 +6,7 @@ export const strings = {
     us: {
         cover: {
             header: 'Memetic / PepeCoin',
-            subHeader: 'A Proof of Stake and Proof of Work hybrid cryptocurrency platform for the Kekdaq decentralized Meme hashing exchange and IPFS meme storage platform. Named PEPE first, now also named MEME.
+            subHeader: 'A Proof of Stake and Proof of Work hybrid cryptocurrency platform for the Kekdaq decentralized Meme hashing exchange and IPFS meme storage platform. Named PEPE first, now also named MEME.',
             learnMore: 'Learn more',
             tryNow: 'Try now'
         },
