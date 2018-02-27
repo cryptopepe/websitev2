@@ -101,16 +101,16 @@ export const strings = {
             dailyChange: '24h change',
         },
         roi: {
-            header: 'Price Stats',
-            since: 'Since January 2017',
-            perMonth: 'Per month/Mastertoad',
-            calculator: 'MasterToad Calculator',
-            enterNumberOfToads: 'Enter number of MasterToads',
+            header: '',
+            since: '',
+            perMonth: '',
+            calculator: '',
+            enterNumberOfToads: '',
             day: 'day',
             month: 'month'
         },
         footer: {
-            memeticFoundation: 'Memetic Foundation',
+            memeticFoundation: 'Memetic',
             links: {
                 home: 'Home',
                 kekdaq: 'Kekdaq',
